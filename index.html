@@ -3,7 +3,7 @@
   <meta charset="utf-8">
 
   <style>
-    .lay {outline:10px solid pink;outline-offset:-10px;font-size: 50px;text-align: center;line-height: 10;}
+    .lay {display:none;outline:10px solid pink;outline-offset:-10px;font-size: 50px;text-align: center;line-height: 10;}
     @media screen and (orientation: portrait) {
       body {
           background-color: lightblue;
@@ -11,7 +11,7 @@
       body:before {
         content:"直向";
       }
-      .lay {position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,.5);}
+      .lay {display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,.5);}
     }
     @media screen and (orientation: landscape) {
       body {
@@ -25,6 +25,6 @@
 </head>
 <body>
   <br /><input type="text" />
-  <div class="lay">我是一個大遮罩,不轉成橫的就蓋住你!</div>
+  <div class="lay">我是一個大遮罩,不轉成橫的就蓋住你!<input type="text" value="不過你可以開鍵盤試試" /></div>
 </body>
 </html>
